@@ -1,0 +1,176 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+h1 {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 60px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 + p {
+    text-align: center;
+    font-size: 20px;
+    margin: 25px 0 45px;
+    color: #4b5563;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+h2 {
+    margin-top: 35px;
+}
+
+p {
+    font-size: 17px;
+    color: #4b5563;
+}
+
+
+/* =========================
+   SKILLS LIST
+========================= */
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+li {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+h2:last-of-type {
+    margin-top: 45px;
+}
+
+h2:last-of-type + p {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    display: block;
+    margin: 35px auto 0;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+        padding: 45px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
